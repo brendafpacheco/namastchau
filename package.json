@@ -1,0 +1,22 @@
+{
+  "name": "namastchau",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendafpacheco/namastchau.git"
+  },
+  "author": "Brenda Pacheco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendafpacheco/namastchau/issues"
+  },
+  "homepage": "https://github.com/brendafpacheco/namastchau#readme",
+  "dependencies": {
+    "popper.js": "^1.15.0"
+  }
+}
