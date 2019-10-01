@@ -11,11 +11,11 @@
     <title>Template de blog usando Bootstrap</title>
 
     <!-- Principal CSS do Bootstrap -->
-    <link href="../assets/bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
 
     <!-- Estilos customizados para esse template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="../assets/css/blog.css" rel="stylesheet">
+    <link href="../../assets/css/blog.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,56 +44,55 @@
 
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="criarPost.html">Criar Post</a>
-                <a class="p-2 text-muted" href="listaPosts.html">Posts Salvos</a>
-                <a class="p-2 text-muted" href="#">Tecnologia</a>
-                <a class="p-2 text-muted" href="#">Design</a>
-                <a class="p-2 text-muted" href="#">Cultura</a>
-                
+                <a class="p-2 text-muted" href="index.html">Lista de Colunista</a>
+                <a class="p-2 text-muted" href="listaLeitores.html">Lista de Leitores</a>
+                <a class="p-2 text-muted" href="criarCategoria.html">Criar Categoria</a>
+                <a class="p-2 text-muted" href="listaCategoria.html">Ver Categorias</a>
+            
             </nav>
         </div>
         <br />
         <h3 class="mb-0">
-            Criação de Post
+
         </h3>
         <br />
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Título</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Categoria</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Geral</option>
-                    <option>Gastronomia</option>
-                    <option>Tenologia</option>
-                    <option>Design</option>
-                    <option>Cultura</option>
-                    <option>Saúde</option>
-                    <option>Estilo</option>
-                    <option>Viagem</option>
-                </select>
-            </div>
 
-            <label for="exampleFormControlSelect1">Imagem de Capa</label>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                </div>
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile01"
-                        aria-describedby="inputGroupFileAddon01">
-                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Conteúdo</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-            </div>
-            <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Publicar</button>
-            </div>
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sobrenome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Fulano</td>
+                    <td>Detal</td>
+                    <td>fulano@gmail.com</td>
+                    <td><button type="button" class="btn btn-danger">Excluir</button></td>
+                    <td><button type="button" class="btn btn-primary">Editar</button></td>
+                    <td><button type="button" class="btn btn-primary">+ Info</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Ciclano</td>
+                    <td>Cicloalcano</td>
+                    <td>ciclo@hotmail.com</td>
+                     <td><button type="button" class="btn btn-danger">Excluir</button></td>
+                    <td><button type="button" class="btn btn-primary">Editar</button></td>
+                    <td><button type="button" class="btn btn-primary">+ Info</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <form action="addColunista.html">
+        <button type="submit" class="btn btn-secondary btn-lg">Adicionar Colunista</button>
         </form>
 
         <footer class="blog-footer">

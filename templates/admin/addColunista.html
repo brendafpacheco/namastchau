@@ -11,11 +11,11 @@
     <title>Template de blog usando Bootstrap</title>
 
     <!-- Principal CSS do Bootstrap -->
-    <link href="../assets/bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
 
     <!-- Estilos customizados para esse template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="../assets/css/blog.css" rel="stylesheet">
+    <link href="../../assets/css/blog.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,55 +44,60 @@
 
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="criarPost.html">Criar Post</a>
-                <a class="p-2 text-muted" href="listaPosts.html">Posts Salvos</a>
-                <a class="p-2 text-muted" href="#">Tecnologia</a>
-                <a class="p-2 text-muted" href="#">Design</a>
-                <a class="p-2 text-muted" href="#">Cultura</a>
-                
+                <a class="p-2 text-muted" href="index.html">Lista de Colunista</a>
+                <a class="p-2 text-muted" href="listaLeitores.html">Lista de Leitores</a>
+                <a class="p-2 text-muted" href="listaCategoria.html">Lista de Categorias</a>
+              
             </nav>
         </div>
         <br />
         <h3 class="mb-0">
-            Criação de Post
+            Cadastro de Colunista
         </h3>
         <br />
-        <form>
+        <form action="index.html">
             <div class="form-group">
-                <label for="exampleFormControlInput1">Título</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Categoria</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Geral</option>
-                    <option>Gastronomia</option>
-                    <option>Tenologia</option>
-                    <option>Design</option>
-                    <option>Cultura</option>
-                    <option>Saúde</option>
-                    <option>Estilo</option>
-                    <option>Viagem</option>
-                </select>
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="">
             </div>
 
-            <label for="exampleFormControlSelect1">Imagem de Capa</label>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                </div>
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile01"
-                        aria-describedby="inputGroupFileAddon01">
-                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                </div>
-            </div>
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Conteúdo</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="">
             </div>
+
+            <div class="form-group">
+                <label for="rg">RG</label>
+                <input type="text" class="form-control" id="rg" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="xxx.xxx.xxx-xx">
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="">
+            </div>
+        
             <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Publicar</button>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
             </div>
         </form>
 

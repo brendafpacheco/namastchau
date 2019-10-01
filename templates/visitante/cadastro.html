@@ -11,11 +11,11 @@
     <title>Template de blog usando Bootstrap</title>
 
     <!-- Principal CSS do Bootstrap -->
-    <link href="../assets/bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
 
     <!-- Estilos customizados para esse template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="../assets/css/blog.css" rel="stylesheet">
+    <link href="../../assets/css/blog.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,12 +24,6 @@
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
-                    <a class="text-muted" href="#">Logout</a>
-                </div>
-                <div class="col-4 text-center">
-                    <a class="blog-header-logo text-dark" href="#">Namastchau</a>
-                </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
                     <a class="text-muted" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -39,60 +33,65 @@
                         </svg>
                     </a>
                 </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="#">Namastchau</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="btn btn-sm btn-outline-secondary" href="#">Cadastrar-se</a>
+                </div>
             </div>
         </header>
 
         <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="criarPost.html">Criar Post</a>
-                <a class="p-2 text-muted" href="listaPosts.html">Posts Salvos</a>
-                <a class="p-2 text-muted" href="#">Tecnologia</a>
-                <a class="p-2 text-muted" href="#">Design</a>
-                <a class="p-2 text-muted" href="#">Cultura</a>
-                
+            <nav class="nav d-flex justify-content-center">
+                <a class="p-2 text-muted" href="#">Categoria 1</a>
+                <a class="p-2 text-muted" href="#">Categoria 2</a>
+                <a class="p-2 text-muted" href="#">Categoria 3</a>
+
             </nav>
         </div>
-        <br />
+
+        <div class="p-3 p-md-1">
+            <!-- <div class="jumbotron p-3 p-md-5 text-white rounded bg-primary"> -->
+            <!-- <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">Título mais longo para um post destacado</h1>
+          <p class="lead my-3">Várias linhas formando uma introdução, informando novos leitores rápido e eficientemente sobre o que é mais interessante, neste post.</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue lendo...</a></p>
+        </div> -->
+        </div>
+
+        <!-- <br /> -->
         <h3 class="mb-0">
-            Criação de Post
+            Cadastro de Leitor
         </h3>
         <br />
-        <form>
+        <form action="index.html">
             <div class="form-group">
-                <label for="exampleFormControlInput1">Título</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Categoria</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Geral</option>
-                    <option>Gastronomia</option>
-                    <option>Tenologia</option>
-                    <option>Design</option>
-                    <option>Cultura</option>
-                    <option>Saúde</option>
-                    <option>Estilo</option>
-                    <option>Viagem</option>
-                </select>
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="">
             </div>
 
-            <label for="exampleFormControlSelect1">Imagem de Capa</label>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                </div>
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile01"
-                        aria-describedby="inputGroupFileAddon01">
-                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                </div>
-            </div>
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Conteúdo</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="">
             </div>
             <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Publicar</button>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
             </div>
         </form>
 
