@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Template de blog usando Bootstrap</title>
+    <title>Namastchau</title>
 
     <!-- Principal CSS do Bootstrap -->
     <link href="../../assets/bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
@@ -21,9 +21,7 @@
 <body>
 
     <div class="container">
-       
-       
-         <header class="blog-header py-3">
+        <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
                     <a class="text-muted" href="#">
@@ -44,13 +42,12 @@
                     <div class="dropdown">
                         <button class="btn dropdown-toggle btn-sm btn-outline-secondary" type="button"
                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Olá, Admin
+                            Olá, Fulano Leitor
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Perfil</a>
                         </div>
                     </div>
-
                     &nbsp;
                     <a class="btn btn-sm btn-outline-secondary" href="#">Logout</a>
                 </div>
@@ -58,67 +55,73 @@
         </header>
 
         <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="index.html">Lista de Colunista</a>
-                <a class="p-2 text-muted" href="listaLeitores.html">Lista de Leitores</a>
-                <a class="p-2 text-muted" href="criarCategoria.html">Categorias</a>
+            <nav class="nav d-flex justify-content-center">
+                <a class="p-2 text-muted" href="#">Categoria 1</a>
+                <a class="p-2 text-muted" href="#">Categoria 2</a>
+                <a class="p-2 text-muted" href="#">Categoria 3</a>
+                <a class="p-2 text-muted" href="#">Salvos</a>
+
             </nav>
         </div>
-        <br />
+        
+        <div class="p-3 p-md-1"></div>
+
         <h3 class="mb-0">
-        Lista de Categorias
+            Salvos
         </h3>
-        <br />
-
-        <table class="table">
-            <thead class="thead-light">
-                <tr>
-                    <th scope="col">Codigo</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Sobrenome</th>
-                    <th scope="col">Email</th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Fulano</td>
-                    <td>Detal</td>
-                    <td>fulano@gmail.com</td>
-                    <td><button type="button" class="btn btn-danger">Excluir</button></td>
-                    <td><button type="button" class="btn btn-primary">Editar</button></td>
-                    <td><button type="button" class="btn btn-primary">+ Info</button></td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Ciclano</td>
-                    <td>Cicloalcano</td>
-                    <td>ciclo@hotmail.com</td>
-                     <td><button type="button" class="btn btn-danger">Excluir</button></td>
-                    <td><button type="button" class="btn btn-primary">Editar</button></td>
-                    <td><button type="button" class="btn btn-primary">+ Info</button></td>
-                </tr>
-
-            </tbody>
-        </table>
-        <form action="addColunista.html">
-            <button type="submit" class="btn btn-secondary btn-lg">Adicionar Colunista</button>
         <br>
-        <br>
-        </form>
+        <div class="row mb-2">
 
-        <footer class="blog-footer">
-            <p>Template de blog construído para o <a href="https://getbootstrap.com/">Bootstrap</a>, pelo <a
-                    href="https://twitter.com/mdo">@mdo</a>.</p>
-            <p>
-                <a href="#">Voltar ao topo</a>
-            </p>
-        </footer>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Saído do forno</a>
+                        </h3>
+                        <div class="mb-1 text-muted">
+                            <p class="blog-post-meta">12 de Nov — Escrito por <a href="#">Mark</a></p>
+                        </div>
+                        <p class="card-text mb-auto">Este é um card maior com suporte à texto, em baixo, como uma
+                            introdução mais natural ao conteúdo adicional.</p>
+                        <a href="#">Continue lendo</a>
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb"
+                        alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Título do post</a>
+                        </h3>
+                        <div class="mb-1 text-muted">
+                            <p class="blog-post-meta">12 de Nov — Escrito por <a href="#">Mark</a></p>
+                        </div>
+                        <p class="card-text mb-auto">Este é um card maior com suporte à texto em baixo, como uma
+                            introdução mais natural ao conteúdo adicional.</p>
+                        <a href="#">Continue lendo</a>
+                        <!-- <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
 
-    <!-- Principal JavaScript do Bootstrap
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb"
+                        alt="Card image cap">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="blog-footer">
+        <p>Template de blog construído para o <a href="https://getbootstrap.com/">Bootstrap</a>, pelo <a
+                href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+            <a href="#">Voltar ao topo</a>
+        </p>
+    </footer>
+
+       <!-- Principal JavaScript do Bootstrap
     ================================================== -->
     <!-- Foi colocado no final para a página carregar mais rápido -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
