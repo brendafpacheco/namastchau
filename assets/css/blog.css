@@ -126,6 +126,72 @@ h1, h2, h3, h4, h5, h6 {
   color: #999;
 }
 
+.blog-post-comentarios {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    margin: 25px 0px 0px 0px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.blog-post-comentarios a {
+    background: url('imagens/post-comentario.png') no-repeat;
+    background-size: 31px 29px;
+    height: 29px;
+    color: #000;
+    font-family: 'BwSurcoRegular';
+    font-size: 1.4em;
+    line-height: 29px;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 50px;
+    position: relative;
+    display: inline-block;
+  }
+
+.blog-post-favorite {
+  float: right;
+    padding-top: 17px;
+    padding-right: 14px;
+}
+
+  #comments {
+    width: 100%;
+    margin: 55px 0px 0px 0px;
+    border-top: 1px solid #E2E2E2;
+    position: relative;
+    float: left;
+  }
+
+  #respond {
+    width: 100%;
+    padding: 35px 0px 0px 0px;
+    position: relative;
+    float: left;
+}
+
+#responder-conteudo {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    float: left;
+}
+
+#commentform {
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+.responder-campo-nome, .responder-campo-email {
+    width: 49.0196%;
+}
+.responder-campo-email {
+    float: right;
+}
 /*
  * Footer
  */
