@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Dancing+Script|Satisfy&display=swap');
+
 /* 
     font-family: 'Dancing Script', cursive;
     font-family: 'Cinzel', serif;
     font-family: 'Satisfy', cursive;
  */
 /* stylelint-disable selector-list-comma-newline-after */
+
+a {
+  color:#ba1a6f !important;
+}
 
 .blog-header {
   line-height: 1;
@@ -62,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-img-right {
   height: 100%;
+  width: 40%;
   border-radius: 0 3px 3px 0;
 }
 
@@ -111,6 +117,9 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post-title {
   margin-bottom: .25rem;
   font-size: 2.5rem;
+}
+.blog-post-cover {
+  max-width: 100%;
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
